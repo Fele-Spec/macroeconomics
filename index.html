@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe3">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>宏观七日 · 高鸿业宏观 12–16 章冲刺</title>
+  <meta name="description" content="为高鸿业《西方经济学（宏观部分）》12–16 章设计的七日冲刺学习平台：讲义、闪卡、题库、模考、错题本与 IS-LM 图形实验室。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#/today" aria-label="回到今日">
+      <span class="brand-mark" aria-hidden="true">7</span>
+      <span class="brand-text"><b>宏观七日</b><small>MACRO SPRINT</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#/today" data-nav="today"><i>◉</i><span>今日</span></a>
+      <a href="#/learn" data-nav="learn"><i>▤</i><span>讲义</span></a>
+      <a href="#/cards" data-nav="cards"><i>▭</i><span>闪卡</span></a>
+      <a href="#/quiz" data-nav="quiz"><i>✎</i><span>题库</span></a>
+      <a href="#/exam" data-nav="exam"><i>◷</i><span>模考</span></a>
+      <a href="#/stats" data-nav="stats"><i>▥</i><span>战报</span></a>
+    </nav>
+
+    <div class="topstats">
+      <span class="topstat" id="streakStat" title="连续学习天数">🔥 <b>0</b></span>
+      <span class="topstat" id="xpStat" title="经验值">0 <small>XP</small></span>
+      <button class="icon-btn" id="settingsBtn" aria-label="设置" title="设置">⚙</button>
+    </div>
+  </header>
+
+  <main id="main" class="main" tabindex="-1"></main>
+
+  <footer class="footer">
+    <span>宏观七日 · 为高鸿业《西方经济学（宏观部分）》第 7/8 版 12–16 章设计</span>
+    <span class="footer-dot">·</span>
+    <span>检索练习 + 间隔重复 + 交错练习</span>
+    <span class="footer-dot">·</span>
+    <span>数据只存在你的浏览器里</span>
+  </footer>
+
+  <nav class="tabbar" aria-label="移动端导航">
+    <a href="#/today" data-nav="today"><i>◉</i><span>今日</span></a>
+    <a href="#/learn" data-nav="learn"><i>▤</i><span>讲义</span></a>
+    <a href="#/cards" data-nav="cards"><i>▭</i><span>闪卡</span></a>
+    <a href="#/quiz" data-nav="quiz"><i>✎</i><span>题库</span></a>
+    <a href="#/exam" data-nav="exam"><i>◷</i><span>模考</span></a>
+    <a href="#/stats" data-nav="stats"><i>▥</i><span>战报</span></a>
+  </nav>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+  <script src="data/core.js"></script>
+  <script src="data/ch12.js"></script>
+  <script src="data/ch13.js"></script>
+  <script src="data/ch14.js"></script>
+  <script src="data/ch15.js"></script>
+  <script src="data/ch16.js"></script>
+  <script src="data/pol1.js"></script>
+  <script src="data/pol2.js"></script>
+  <script src="data/plan.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/practice.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
